@@ -1,5 +1,6 @@
 import React from "react";
-import { Navbar, Nav,  Container,} from 'react-bootstrap';
+import { Navbar, Nav,  Container, Button} from 'react-bootstrap';
+import { Link} from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -12,13 +13,13 @@ const Header = () => {
 
 
                         <Nav className="me-auto my-2 my-lg-0">
-                            <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">Find Ride</Nav.Link>
-                            <Nav.Link href="#action2">View Rides</Nav.Link>
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/book">Find Ride</Nav.Link>
+                            <Nav.Link href="/view">View Rides</Nav.Link>
                         </Nav>
                         <div className="d-flex">
                             <Nav className="me-auto my-2 my-lg-0">
-                                <Nav.Link href="#action1">Account</Nav.Link>
+                                <Button className="btn btn-danger">Account</Button>
                             </Nav>
                         </div>
 
