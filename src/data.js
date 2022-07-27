@@ -1,9 +1,4 @@
-import React from "react";
-import { Card, Container, Button } from 'react-bootstrap';
-import './style.css';
-import RideCard from "./RideCard";
-
-const rides = [
+const ridesData = [
     {
         "trip": 98788,
         "journey": {
@@ -46,23 +41,4 @@ const rides = [
             "number": "22BH1340"
         }
     }
-];
-
-console.log(rides.map)
-
-const ViewRides = () => {
-
-    return (
-        <div>
-            <Container className="py-5" style={{ height: "100vh" }}>
-                <h1>View Previous Rides</h1>
-                <div className="row">
-                    <RideCard rides={rides} />
-                </div>
-            </Container>
-        </div>
-
-    )
-}
-
-export default ViewRides
+]
